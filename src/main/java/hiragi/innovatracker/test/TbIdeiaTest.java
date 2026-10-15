@@ -1,5 +1,9 @@
 package hiragi.innovatracker.test;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 727916a3be1f627dd737096541b04258693b5e00
 import hiragi.innovatracker.InnovatrackerApplication;
 import hiragi.innovatracker.model.TbIdeia;
 import hiragi.innovatracker.model.TbPessoa;
@@ -11,10 +15,18 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 727916a3be1f627dd737096541b04258693b5e00
 import java.math.BigDecimal;
 import java.util.Optional;
 import java.util.Scanner;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 727916a3be1f627dd737096541b04258693b5e00
 public class TbIdeiaTest {
 
 
@@ -84,9 +96,14 @@ public class TbIdeiaTest {
     private static void consultar(TbIdeiaRepository ideiaRep) {
         System.out.println("\n--- Lista de Ideias ---");
         ideiaRep.findAll().forEach(i ->
+<<<<<<< HEAD
                 System.out.printf("ID: %d | Categoria: %s | Pessoa: %s%nNome Ideia: %s | Orçamento: R$ %.2f | Status: %s%n",
                         i.getIdtIdeia(), i.getTdCategoria().getNmeCategoria(),
                         i.getPessoa().getNmePessoa(), i.getNmeIdeia(), i.getVlrOrcamentoIdeia(), i.getStsIdeia())
+=======
+                System.out.printf("ID: %d | Nome: %s | Orçamento: R$ %.2f | Status: %s%n",
+                        i.getIdtIdeia(), i.getNmeIdeia(), i.getVlrOrcamentoIdeia(), i.getStsIdeia())
+>>>>>>> 727916a3be1f627dd737096541b04258693b5e00
         );
     }
 
@@ -119,9 +136,17 @@ public class TbIdeiaTest {
             TdCategoriaRepository categoriaRep = ctx.getBean(TdCategoriaRepository.class);
             TbPessoaRepository pessoaRep = ctx.getBean(TbPessoaRepository.class);
 
+<<<<<<< HEAD
             Scanner leitor = new Scanner(System.in);
             boolean sair = false;
 
+=======
+
+            Scanner leitor = new Scanner(System.in);
+            boolean sair = false;
+
+
+>>>>>>> 727916a3be1f627dd737096541b04258693b5e00
             while (!sair) {
                 System.out.println("""
                       
